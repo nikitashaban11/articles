@@ -32,8 +32,8 @@ const Articles = () => {
 
   const postPerPage = 10;
   const indexOfLastPost = currentPage * postPerPage;
-  const indeOfFirstPost = indexOfLastPost - postPerPage;
-  const currentArticles = articles.slice(indeOfFirstPost, indexOfLastPost);
+  const indexOfFirstPost = indexOfLastPost - postPerPage;
+  const currentArticles = articles.slice(indexOfFirstPost, indexOfLastPost);
 
   const onPageChangedHandler = (page: number) => {
     setCurrentPage(page);
